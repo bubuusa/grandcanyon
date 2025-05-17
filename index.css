@@ -1,0 +1,85 @@
+@charset "UFT-8";
+
+/* ベーススタイル */
+body {
+   font-family: 'Georgia', serif;
+   margin: 0;
+   background-color: #fff8f0;
+   color: #3c2f2f;
+   line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+   background: linear-gradient(135deg, #8b3a3a, #d2691e);
+   color: white;
+   padding: 2.5rem 1rem;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+   font-size: 2.5rem;
+   margin-bottom: 0.5rem;
+}
+
+header p {
+   font-size: 1.1rem;
+   font-style: italic;
+}
+
+/* メインコンテンツ */
+main {
+   padding: 2rem;
+   background-color: #fef5ec;
+}
+
+/* 公園セクション */
+.park {
+   background: #fff1e6;
+   border-left: 8px solid #a0522d;
+   border-radius: 10px;
+   margin-bottom: 2rem;
+   display: flex;
+   flex-wrap: wrap;
+   overflow: hidden;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   transition: transform 0.3s ease;
+}
+
+.park:hover {
+   transform: translateY(-4px);
+}
+
+/* 画像 */
+.park img {
+   width: 100%;
+   max-width: 350px;
+   object-fit: cover;
+   height: auto;
+   flex-shrink: 0;
+}
+
+/* 情報部分 */
+.park-info {
+   padding: 1rem 1.5rem;
+   flex: 1;
+}
+
+.park-info h2 {
+   color: #8b4513;
+   margin-top: 0;
+}
+
+.park-info p {
+   color: #4e342e;
+}
+
+/* フッター */
+footer {
+   background-color: #5c2e1f;
+   color: #fff5e1;
+   text-align: center;
+   padding: 1rem;
+   font-size: 0.9rem;
+}
